@@ -311,4 +311,70 @@ public:
 
 ---
 
+Here are **code-based conceptual questions only**, organized by topic:
+
+---
+
+### 🔁 **Polymorphism**
+
+1. What will be the output of this code using a base class pointer to call a derived class method?
+2. Is function overloading an example of compile-time or runtime polymorphism?
+3. What happens if you remove the `virtual` keyword in a polymorphic base class function?
+4. Can constructors be virtual in C++? Why or why not?
+5. What does the `override` keyword do, and what happens if it's omitted?
+
+---
+
+### 🧩 **Aggregation**
+
+6. If an object is passed into a constructor by pointer, does that indicate aggregation or composition?
+7. What happens to the aggregated object when the container object is destroyed?
+8. Can multiple container objects share the same aggregated object? Why?
+9. Does aggregation imply memory management responsibility?
+10. How would you identify aggregation by just looking at the code?
+
+---
+
+### 🔗 **Association**
+
+11. Can an associated object exist without the class it's linked to?
+12. Is this a one-to-one, one-to-many, or many-to-many association?
+13. What kind of relationship exists if two classes just reference each other?
+14. How does association differ from inheritance in C++?
+15. Can association exist without pointers or references?
+
+---
+
+### 🧱 **Composition**
+
+16. What is the order of constructor and destructor calls in a composed class?
+17. Can you reuse a composed object across multiple container classes?
+18. How does the destruction of a container class affect its composed members?
+19. Does composition imply strong or weak coupling?
+20. In what scenario would you prefer composition over inheritance?
+
+---
+
+### 🧑‍🤝‍🧑 **Friend Class & Function**
+
+21. Can a friend function access private data members of a class?
+22. Is friendship reciprocal between classes?
+23. Can a friend function be a member of another class?
+24. What are the security implications of using friend functions?
+25. Does declaring a friend class break encapsulation? Why or why not?
+
+---
+
+### 🧬 **Inheritance**
+
+26. What is the output if both base and derived classes define the same function without `virtual`?
+27. How does the constructor call order work in inheritance?
+28. What is the purpose of the `protected` access modifier in inheritance?
+29. What problem does virtual inheritance solve?
+30. Can a derived class inherit private members from a base class? How?
+
+---
+
+
+
 ## Thank You!
