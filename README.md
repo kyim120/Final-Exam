@@ -12,7 +12,7 @@ This document explains essential C++ OOP (Object-Oriented Programming) topics in
 4. [Composition](#4-composition)
 5. [Friend Class and Friend Function](#5-friend-class-and-friend-function)
 6. [Inheritance](#6-inheritance)
-7. [Prepared By](#prepared-by)
+7. [Quic Quiz](#7-quik-quiz)
 
 ---
 
@@ -313,6 +313,7 @@ public:
 
 Here are **code-based conceptual questions only**, organized by topic:
 
+# Quik Quiz
 ---
 
 ### 🔁 **Polymorphism**
