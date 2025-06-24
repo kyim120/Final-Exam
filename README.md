@@ -313,7 +313,7 @@ public:
 
 Here are **code-based conceptual questions only**, organized by topic:
 
-# Quik Quiz
+## 7. Quik Quiz
 ---
 
 ### 🔁 **Polymorphism**
