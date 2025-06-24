@@ -4,6 +4,18 @@ This document explains essential C++ OOP (Object-Oriented Programming) topics in
 
 ---
 
+## 📚 Table of Contents
+
+1. [Polymorphism](#1-polymorphism)
+2. [Aggregation](#2-aggregation)
+3. [Association](#3-association)
+4. [Composition](#4-composition)
+5. [Friend Class and Friend Function](#5-friend-class-and-friend-function)
+6. [Inheritance](#6-inheritance)
+7. [Prepared By](#prepared-by)
+
+---
+
 ## 1. Polymorphism
 
 Polymorphism means "many forms". It allows us to perform a single action in different ways. In C++, it is of two types:
@@ -49,6 +61,13 @@ Polymorphism means "many forms". It allows us to perform a single action in diff
    };
    ```
 
+### Key Concepts:
+
+* Virtual functions must be accessed through pointers/references.
+* Use `override` keyword for clarity and safety.
+* Abstract classes contain at least one pure virtual function.
+* `final` can prevent overriding.
+
 ### Conceptual Questions:
 
 1. What is the difference between static and dynamic polymorphism?
@@ -88,6 +107,8 @@ public:
 
 * Weak relationship.
 * Lifetimes are independent.
+* Aggregated objects are passed by reference or pointer.
+* Used when multiple objects can share a single instance.
 
 ### Conceptual Questions:
 
@@ -125,6 +146,12 @@ public:
 * Many-to-One
 * Many-to-Many
 
+### Key Points:
+
+* Bidirectional or unidirectional.
+* No lifecycle dependency.
+* Used for communication without ownership.
+
 ### Conceptual Questions:
 
 1. What is an association in OOP?
@@ -161,6 +188,7 @@ public:
 * Strong relationship.
 * Lifetimes are bound together.
 * Cannot exist without each other.
+* The containing class manages the lifetime of the contained object.
 
 ### Conceptual Questions:
 
@@ -215,6 +243,12 @@ void B::show(A& obj) {
 }
 ```
 
+### Key Points:
+
+* Useful when two or more classes need to work very closely.
+* Not inherited.
+* Friendship is not mutual.
+
 ### Conceptual Questions:
 
 1. What is a friend function?
@@ -249,17 +283,23 @@ public:
 
 ### Types of Inheritance:
 
-1. **Single**
-2. **Multiple**
-3. **Multilevel**
-4. **Hierarchical**
-5. **Hybrid**
+1. **Single** - One base, one derived class.
+2. **Multiple** - Multiple base classes.
+3. **Multilevel** - Derived from a derived class.
+4. **Hierarchical** - One base, multiple derived classes.
+5. **Hybrid** - Combination of above types.
 
 ### Access Specifiers:
 
 * **Public**: Public and protected members stay accessible.
 * **Protected**: Public becomes protected.
 * **Private**: Everything becomes private.
+
+### Key Points:
+
+* Constructors of base are called before derived.
+* Destructors are called in reverse order.
+* Virtual inheritance prevents Diamond Problem.
 
 ### Conceptual Questions:
 
@@ -271,4 +311,4 @@ public:
 
 ---
 
-Thank You </>
+## Thank You!
